@@ -1,0 +1,16 @@
+<a ng-click="showNp()"><div class="jumbotron btn blue lefty" ng-model="newPlayer">{{status}}</div></a>
+<div class="jumbotron blue" ng-show="np">
+	<form name="newPlayerForm">
+		<input type="url" placeholder="Player Photo" class="form-control" ng-model="details.photo" required/><br>
+		<input type="text" placeholder="Full Name" class="form-control" ng-model="details.name" required/><br>
+		<input type="text" placeholder="Jersey Number" class="form-control" ng-model="details.jersyNumber" required/><br>
+		<input type="tel" placeholder="Phone Number" class="form-control" ng-model="details.phone" required/><br>
+		<button ng-disabled="newPlayerForm.$invalid" ng-click="newPlayer(details)">Add Player</button>
+	</form>
+</div>
+
+<div ng-show="!np">
+	<ul>
+		<li ng-repeat="player in players">{{player.name}}<span class="righty">{{player.number}}</span></li>
+	</ul>
+</div>
