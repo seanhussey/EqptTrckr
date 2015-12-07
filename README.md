@@ -1,4 +1,4 @@
 EqptTrckr
 =========
 
-Equiptment Tracker for the tracking of equiptment and equiptment tracking.
+Equipment Tracker for the tracking of equipment and equipment tracking.
